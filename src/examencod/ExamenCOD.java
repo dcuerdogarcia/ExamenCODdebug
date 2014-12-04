@@ -7,24 +7,24 @@ public class ExamenCOD {
      */
     public static void main(String[] args) {
         int iN = 11;
-        if (metodoTuyo(iN)) {
+        if (metodoMio(iN)) {
             System.out.println("Es numero primo");
         } else {
             System.out.println("NO es numero primo");
         }
-        
+
         for (int x = 2; x < 1000; x++) {
-            if (metodoTuyo(x)) {
+            if (metodoMio(x)) {
                 System.out.print(x + " ");
             }
         }
     }
 
-    public static boolean metodoTuyo(int variableRef) {
+    public static boolean metodoMio(int variable) {
         int j = 2;
         boolean aux = true;
-        while ((aux) && (j != variableRef)) {
-            if (variableRef % j == 0) {
+        while ((aux) && (j != variable)) {
+            if (variable % j == 0) {
                 aux = false;
             }
             j++;
